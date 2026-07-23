@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,96 +7,177 @@
     
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReH4gcMYic2uvq-p-rDxBXP0jdNVRivTj2vQ&s" type="image/x-icon">
     
-<style>
-    /*CSS-Diseño, configurar en cascada(Esto si es un lenguage de progra)*/
-    html, body{
-        height: 100%;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    body{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: #f0f2f5;
-    }
-    header{
-        padding: 20px;
-        background-color: #1a1a1a;
-    }
-    h1{
-        color; white;
-        text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe, 0 0 40px #bc13fe;
-    }
-    main{
-        flex: 1;
-        padding: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 50px;
-        border-top: 1px solid rgb(25, 21, 249);
-        background-color: rgb(16, 140, 223);
-    }
-    .semana {
-        background-color: white;
-        border-radius: 15px;
-        padding: 20px;
-        margin: 20px auto;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        border-left: 6px solid #bc13fe;
-        text-align: left;
-    }
+    <style>
+        /* Estilos generales */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    footer img {
-        transition: transform 0.3s ease;
-        width: 150px;
-    }
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #f0f2f5;
+        }
 
-    footer img:hover {
-        transform: scale(1.2);
-    }
-</style>
+        header {
+            padding: 20px;
+            background-color: #1a1a1a;
+        }
 
+        h1 {
+            color: white; /* Corregido error de sintaxis */
+            text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe, 0 0 40px #bc13fe;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .semana {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-left: 6px solid #bc13fe;
+            text-align: left;
+        }
+
+        .semana h4 {
+            margin-top: 0;
+            color: #1a1a1a;
+            font-size: 1.2rem;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-top: 10px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid rgb(25, 21, 249);
+            background-color: rgb(16, 140, 223);
+            color: white;
+            font-weight: bold;
+        }
+
+        footer img {
+            transition: transform 0.3s ease;
+            width: 150px;
+        }
+
+        footer img:hover {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>Bitácora Segunda y Tercera Unidad</h1>
     </header>
+
     <main>
+        <!-- Semana 1 -->
         <div class="semana">
             <h4>Semana 1: Inicio de la Programación</h4>
-            <p>El primer contacto tecnico con la programación de la pagina WEB.</p>
-            <iframe src="c:\Users\Alumno Capouilliez\Downloads\Introducción Arduino (3).pdf" width="100%" height="400px"></iframe>
-        </div>
-
-        <div class="semana">
-            <h4>Semana 2: Estilos Avanzados</h4>
-            <p>En esta sección aprendimos a usar efectos para decoración, darle un aspecto mas profesional y acudimos a la IA correctamente.</p>
-            <img src="c:\Users\Alumno Capouilliez\Pictures\Screenshots\Captura de pantalla (8).png" alt="Foto de las primeras etapas del codigo" style="width: 100%; border-radius: 10px;">
-        </div>
-
-        <div class="semana">
-            <h4>Semana 3: Video de Evidencia</h4>
-            <p>En este video se muestra el proceso de lo trabajado en clase:</p>
-            <video width="100%" controls style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                <source src="mivideo.mp4" type="video/mp4">
+            <p>El primer contacto técnico con la programación de la página Web y conceptos básicos.</p>
+            <video controls>
+                <source src="videos/semana1.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de videos.
-        </video>
-</div>
-    
-</main>
-    
-<footer>
+            </video>
+        </div>
+
+        <!-- Semana 2 -->
+        <div class="semana">
+            <h4>Semana 2: Estilos Avanzados y CSS</h4>
+            <p>Aprendimos a usar efectos de decoración, darle un aspecto más profesional a la interfaz y el uso correcto de herramientas de IA.</p>
+            <video controls>
+                <source src="videos/semana2.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <!-- Semana 3 -->
+        <div class="semana">
+            <h4>Semana 3: Maquetación y Estructura</h4>
+            <p>Implementación de contenedores flexibles (Flexbox) y distribución del contenido en la página.</p>
+            <video controls>
+                <source src="videos/semana3.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <!-- Semana 4 -->
+        <div class="semana">
+            <h4>Semana 4: Multimedia e Interactividad</h4>
+            <p>Integración de elementos multimedia como video, audio e imágenes optimizadas.</p>
+            <video controls>
+                <source src="videos/semana4.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <!-- Semana 5 -->
+        <div class="semana">
+            <h4>Semana 5: Introducción a Scripts</h4>
+            <p>Primeros pasos agregando lógica interactiva a la página web.</p>
+            <video controls>
+                <source src="videos/semana5.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <!-- Semana 6 -->
+        <div class="semana">
+            <h4>Semana 6: Diseño Responsivo</h4>
+            <p>Adaptación del diseño para pantallas de dispositivos móviles y tablets.</p>
+            <video controls>
+                <source src="videos/semana6.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <!-- Semana 7 -->
+        <div class="semana">
+            <h4>Semana 7: Optimización y Estilos Finales</h4>
+            <p>Ajuste de sombras, bordes, animaciones de hover y detalles estéticos.</p>
+            <video controls>
+                <source src="videos/semana7.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <!-- Semana 8 -->
+        <div class="semana">
+            <h4>Semana 8: Presentación del Proyecto Final</h4>
+            <p>Revisión final de la bitácora, pruebas de funcionamiento y entrega.</p>
+            <video controls>
+                <source src="videos/semana8.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+    </main>
+
+    <footer>
         <span>@shivery_load</span>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReH4gcMYic2uvq-p-rDxBXP0jdNVRivTj2vQ&s" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReH4gcMYic2uvq-p-rDxBXP0jdNVRivTj2vQ&s" alt="Logo">
     </footer>
 
-
-    
 </body>
 </html>
