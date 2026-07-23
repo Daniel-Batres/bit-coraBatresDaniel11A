@@ -8,7 +8,6 @@
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReH4gcMYic2uvq-p-rDxBXP0jdNVRivTj2vQ&s" type="image/x-icon">
     
     <style>
-        /* Estilos generales */
         html, body {
             height: 100%;
             margin: 0;
@@ -28,7 +27,7 @@
         }
 
         h1 {
-            color: white; /* Corregido error de sintaxis */
+            color: white;
             text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe, 0 0 40px #bc13fe;
             margin: 0;
         }
@@ -58,11 +57,14 @@
             font-size: 1.2rem;
         }
 
+        /* Estilo adaptativo para el reproductor de video */
         video {
             width: 100%;
+            max-height: 450px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             margin-top: 10px;
+            background-color: #000;
         }
 
         footer {
@@ -97,8 +99,9 @@
         <div class="semana">
             <h4>Semana 1: Inicio de la Programación</h4>
             <p>El primer contacto técnico con la programación de la página Web y conceptos básicos.</p>
-            <video controls>
-                <source src="videos/semana1.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source src="semana1.mp4" type="video/mp4">
+                <source src="semana1.webm" type="video/webm">
                 Tu navegador no soporta la reproducción de videos.
             </video>
         </div>
@@ -107,8 +110,8 @@
         <div class="semana">
             <h4>Semana 2: Estilos Avanzados y CSS</h4>
             <p>Aprendimos a usar efectos de decoración, darle un aspecto más profesional a la interfaz y el uso correcto de herramientas de IA.</p>
-            <video controls>
-                <source src="videos/semana2.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source src="semana2.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de videos.
             </video>
         </div>
@@ -117,8 +120,8 @@
         <div class="semana">
             <h4>Semana 3: Maquetación y Estructura</h4>
             <p>Implementación de contenedores flexibles (Flexbox) y distribución del contenido en la página.</p>
-            <video controls>
-                <source src="videos/semana3.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source src="semana3.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de videos.
             </video>
         </div>
@@ -127,8 +130,8 @@
         <div class="semana">
             <h4>Semana 4: Multimedia e Interactividad</h4>
             <p>Integración de elementos multimedia como video, audio e imágenes optimizadas.</p>
-            <video controls>
-                <source src="videos/semana4.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source src="semana4.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de videos.
             </video>
         </div>
@@ -137,8 +140,8 @@
         <div class="semana">
             <h4>Semana 5: Introducción a Scripts</h4>
             <p>Primeros pasos agregando lógica interactiva a la página web.</p>
-            <video controls>
-                <source src="videos/semana5.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source src="semana5.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de videos.
             </video>
         </div>
@@ -147,8 +150,8 @@
         <div class="semana">
             <h4>Semana 6: Diseño Responsivo</h4>
             <p>Adaptación del diseño para pantallas de dispositivos móviles y tablets.</p>
-            <video controls>
-                <source src="videos/semana6.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source src="semana6.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de videos.
             </video>
         </div>
@@ -157,8 +160,8 @@
         <div class="semana">
             <h4>Semana 7: Optimización y Estilos Finales</h4>
             <p>Ajuste de sombras, bordes, animaciones de hover y detalles estéticos.</p>
-            <video controls>
-                <source src="videos/semana7.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source src="semana7.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de videos.
             </video>
         </div>
@@ -167,8 +170,8 @@
         <div class="semana">
             <h4>Semana 8: Presentación del Proyecto Final</h4>
             <p>Revisión final de la bitácora, pruebas de funcionamiento y entrega.</p>
-            <video controls>
-                <source src="videos/semana8.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source src="semana8.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de videos.
             </video>
         </div>
