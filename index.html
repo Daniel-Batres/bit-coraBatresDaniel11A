@@ -6,86 +6,120 @@
     <title>Bitácora Daniel Batres</title>
     
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReH4gcMYic2uvq-p-rDxBXP0jdNVRivTj2vQ&s" type="image/x-icon">
-    
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    /* 1. Configuración General */
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f2f5; /* Fondo gris claro */
+    }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            background-color: #f0f2f5;
-        }
+    body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 
-        header {
-            padding: 20px;
-            background-color: #1a1a1a;
-        }
+    /* 2. Header Oscuro */
+    header {
+        padding: 30px;
+        background-color: #1a1a1a;
+        border-bottom: 3px solid rgb(44, 221, 0);
+    }
 
-        h1 {
-            color: white;
-            text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe, 0 0 40px #bc13fe;
-            margin: 0;
-        }
+    /* Título Neón Morado */
+    h1 {
+        color: white;
+        margin: 0;
+        text-transform: uppercase;
+        text-shadow: 
+            0 0 10px #bc13fe, 
+            0 0 20px #bc13fe, 
+            0 0 40px #bc13fe;
+    }
 
-        main {
-            flex: 1;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            width: 100%;
-            box-sizing: border-box;
-        }
+    /* 3. Área de Contenido */
+    main {
+        flex: 1;
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-        .semana {
-            background-color: white;
-            border-radius: 15px;
-            padding: 20px;
-            margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-left: 6px solid #bc13fe;
-            text-align: left;
-        }
+    /* Tarjetas del diseño de Daniel */
+    .semana {
+        background-color: white;
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 30px;
+        text-align: left;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        border-left: 8px solid #bc13fe; /* Borde morado brillante de las capturas */
+        transition: transform 0.3s ease;
+    }
 
-        .semana h4 {
-            margin-top: 0;
-            color: #1a1a1a;
-            font-size: 1.2rem;
-        }
+    .semana:hover {
+        transform: translateY(-5px);
+    }
 
-        /* Estilo adaptativo para el reproductor de video */
-        video {
-            width: 100%;
-            max-height: 450px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            margin-top: 10px;
-            background-color: #000;
-        }
+    .semana h2, .semana h4 {
+        margin-top: 0;
+        color: #000;
+        font-size: 1.35rem;
+        font-weight: bold;
+    }
 
-        footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 50px;
-            border-top: 1px solid rgb(25, 21, 249);
-            background-color: rgb(16, 140, 223);
-            color: white;
-            font-weight: bold;
-        }
+    .semana p {
+        color: #333;
+        line-height: 1.5;
+        font-size: 0.95rem;
+    }
 
-        footer img {
-            transition: transform 0.3s ease;
-            width: 150px;
-        }
+    /* Estilos Multimedia */
+    iframe {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
 
-        footer img:hover {
-            transform: scale(1.2);
-        }
+    img.evidencia {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        margin-top: 10px;
+        display: block;
+    }
+
+    video {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+        background-color: black;
+    }
+
+    /* 4. Footer idéntico a la captura */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background-color: #007bff; /* Azul brillante como en la captura */
+        color: white;
+        font-weight: bold;
+    }
+
+    footer img {
+        height: 45px;
+        width: auto;
+        transition: transform 0.3s ease;
+    }
+
+    footer img:hover {
+        transform: scale(1.1);
+    }
     </style>
 </head>
 <body>
@@ -95,90 +129,81 @@
     </header>
 
     <main>
-        <div class="semana">
-
-            <h4>Semana 1: Inicio de la Programación</h4>
-
-            <p>El primer contacto tecnico con la programación de la pagina WEB.</p>
-
-            <iframe src="c:\Users\Alumno Capouilliez\Downloads\Introducción Arduino (3).pdf" width="100%" height="400px"></iframe>
-
-        </div>
         
-        <!-- Semana 2 -->
+       
         <div class="semana">
-            <h4>Semana 2: Estilos Avanzados y CSS</h4>
-            <p>Aprendimos a usar efectos de decoración, darle un aspecto más profesional a la interfaz y el uso correcto de herramientas de IA.</p>
-            <video controls preload="metadata">
-                <source src="semana2.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de videos.
+            <h2>Semana 1: Inicio de la Programación</h2>
+            <p>El primer contacto técnico con la programación de la página WEB y documentación del proyecto.</p>
+            <iframe src="recursos/pdf/Introducción Arduino Gerardo.pdf" width="100%" height="450px"></iframe>
+        </div>
+
+       
+        <div class="semana">
+            <h2>Semana 2: Primer Circuito</h2>
+            <p>Lista de materiales y esquema técnico del primer circuito realizado:</p>
+            <ul style="color: #333; line-height: 1.8;">
+                <li>Protoboard</li>
+                <li>LED</li>
+                <li>Resistencias</li>
+                <li>Arduino UNO</li>
+            </ul>
+            <p style="font-weight: bold; color: #bc13fe;">Esquema del circuito:</p>
+            <img src="recursos/img/circuito.png" alt="Circuito" class="evidencia">
+        </div>
+
+        
+        <div class="semana">
+            <h2>Semana 3: Video del circuito</h2>
+            <p>Se completó el circuito y se programó para que la LED RGB se encendiera en los 3 colores (rojo, azul y verde).</p>
+            <video controls>
+                <source src="recursos/video/Video circuito 1 fisico.mp4" type="video/mp4">
             </video>
         </div>
 
-        <!-- Semana 3 -->
+        
         <div class="semana">
-            <h4>Semana 3: Maquetación y Estructura</h4>
-            <p>Implementación de contenedores flexibles (Flexbox) y distribución del contenido en la página.</p>
-            <video controls preload="metadata">
-                <source src="semana3.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de videos.
+            <h2>Semana 4: Video del circuito 4</h2>
+            <p>Se completó el circuito y se programó para que 3 LEDS de diferentes colores (rojo, amarillo y verde) prendan en un orden específico.</p>
+            <video controls>
+                <source src="recursos/video/Video Circuito 3.mp4" type="video/mp4">
             </video>
         </div>
 
-        <!-- Semana 4 -->
+      
         <div class="semana">
-            <h4>Semana 4: Multimedia e Interactividad</h4>
-            <p>Integración de elementos multimedia como video, audio e imágenes optimizadas.</p>
-            <video controls preload="metadata">
-                <source src="semana4.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de videos.
+            <h2>Semana 5: Video del circuito SEMAFORO</h2>
+            <p>Se completó el circuito y se programó para que los diferentes LEDS se encendieran en los 3 colores con un patrón específico (verde, rojo, amarillo).</p>
+            <video controls>
+                <source src="recursos/video/Video Circuito 2.mp4" type="video/mp4">
             </video>
         </div>
 
-        <!-- Semana 5 -->
+        
         <div class="semana">
-            <h4>Semana 5: Introducción a Scripts</h4>
-            <p>Primeros pasos agregando lógica interactiva a la página web.</p>
-            <video controls preload="metadata">
-                <source src="semana5.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de videos.
+            <h2>Semana 6: Video del circuito con sensor ultrasónico</h2>
+            <p>Se realizó un circuito con sensor ultrasónico que detecta objetos a cierta distancia y enciende 3 luces LEDS diferentes según la distancia del objeto.</p>
+            <video controls>
+                <source src="recursos/video/Video circuito Sensor Ultrasonico.mp4" type="video/mp4">
             </video>
         </div>
 
-        <!-- Semana 6 -->
+        
         <div class="semana">
-            <h4>Semana 6: Diseño Responsivo</h4>
-            <p>Adaptación del diseño para pantallas de dispositivos móviles y tablets.</p>
-            <video controls preload="metadata">
-                <source src="semana6.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de videos.
-            </video>
-        </div>
-
-        <!-- Semana 7 -->
-        <div class="semana">
-            <h4>Semana 7: Optimización y Estilos Finales</h4>
+            <h2>Semana 7: Optimización y Estilos Finales</h2>
             <p>Ajuste de sombras, bordes, animaciones de hover y detalles estéticos.</p>
-            <video controls preload="metadata">
-                <source src="semana7.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de videos.
+            <video controls>
+                <source src="recursos/video/Video circuito PIR.mp4" type="video/mp4">
             </video>
         </div>
 
-        <!-- Semana 8 -->
-        <div class="semana">
-            <h4>Semana 8: Presentación del Proyecto Final</h4>
-            <p>Revisión final de la bitácora, pruebas de funcionamiento y entrega.</p>
-            <video controls preload="metadata">
-                <source src="semana8.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de videos.
-            </video>
-        </div>
+        
+
+
     </main>
 
     <footer>
         <span>@shivery_load</span>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReH4gcMYic2uvq-p-rDxBXP0jdNVRivTj2vQ&s" alt="Logo">
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Colegio Capouilliez">
     </footer>
 
 </body>
